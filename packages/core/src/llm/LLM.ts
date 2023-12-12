@@ -27,6 +27,7 @@ import {
 import { getOpenAISession, OpenAISession } from "./openai";
 import { getPortkeySession, PortkeySession } from "./portkey";
 import { ReplicateSession } from "./replicate";
+export * from "./gradient"
 
 export type MessageType =
   | "user"
