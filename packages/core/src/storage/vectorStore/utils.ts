@@ -17,7 +17,7 @@ export function nodeToMetadata(
   flatMetadata: boolean = false,
 ): Metadata {
   const nodeObj = node.toJSON();
-  const metadata = node.metadata;
+  const metadata = { ...node.metadata };
 
   if (flatMetadata) {
     validateIsFlat(node.metadata);
